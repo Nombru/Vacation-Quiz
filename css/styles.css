@@ -3,12 +3,22 @@ img{
   width: auto;
 }
 
+#name {
+  margin: 100px;
+}
+
+#questions {
+  display: none;
+  margin:100px;
+}
+
 #a_One, #a_Two, #a_Three, #a_Four{
   display: none;
+  margin: 50px
 }
 
 .btn{
   border: 2px solid grey;
   margin: 20px;
-  float: right;
+  float: center;
 }

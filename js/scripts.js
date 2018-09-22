@@ -1,4 +1,11 @@
 $(document).ready(function() {
+
+  $("#name").submit(function(event){
+    var nameInput = $("#fullName").val());
+    $("#questions").show();
+  });
+
+
   $("#questions").submit(function(event){
   //  console.log("Hi");
     var q_OneInput = parseInt($("#q_One").val());
