@@ -10,83 +10,81 @@
   </head>
   <body>
     <div class="container">
-      <form id="name">
-        <div class="form-group" id="fullName">
-          <label for="fullName">Name</label>
-          <input type="text" class="form-control" placeholder="First and last name please.">
-        </div>
-        <button type="button" id="btn">Click here to start.</button>
-      </form>
+      <h1>Find out what vacation that would fit you!</h1>
+      <p>To get started enter your name and asnwer the questions below!</p>
     </div>
     <div class="container">
       <form id="questions">
-<!--Question 1-->
-          <h2>Do you like the Sea?</h2>
+<!-- Asking for name -->
+        <div class="form-group">
+          <label for="fullName">Name</label>
+          <input id="fullName" class="form-control" type="text" placeholder="First and last name please.">
+  <!--Question 1-->
+          <h4>Do you like the Sea?</h4>
           <select class="form-control" id="q_One">
             <option class="chooseOne">Choose one</option>
             <option value="1">Yes</option>
             <option value="2">No</option>
             <option value="0">Maybe</option>
           </select>
-<!-- Quesiton 2 -->
-          <h2>Do you like Spicy Food?</h2>
+  <!-- Quesiton 2 -->
+          <h4>Do you like Spicy Food?</h4>
           <select class="form-control" id="q_Two">
             <option class="chooseOne">Choose one</option>
             <option value="1">Yes</option>
             <option value="2">No</option>
             <option value="0">Maybe</option>
           </select>
-<!--Question 3-->
-          <h2>Do you like Coffee?</h2>
+  <!--Question 3-->
+          <h4>Do you like Coffee?</h4>
           <select class="form-control" id="q_Three">
             <option class="chooseOne">Choose one</option>
             <option value="1">Yes</option>
             <option value="2">No</option>
             <option value="0">Maybe</option>
           </select>
-<!--Question 4-->
-          <h2>Do you like Anime?</h2>
+  <!--Question 4-->
+          <h4>Do you like Anime?</h4>
           <select class="form-control" id="q_Four">
             <option class="chooseOne">Choose one</option>
             <option value="1">Yes</option>
             <option value="2">No</option>
             <option value="0">Maybe</option>
           </select>
-<!--Question 5-->
-          <h2>Do you like Design?</h2>
+  <!--Question 5-->
+          <h4>Do you like Design?</h4>
           <select class="form-control" id="q_Five">
             <option class="chooseOne">Choose one</option>
             <option value="1">Yes</option>
             <option value="2">No</option>
             <option value="0">Maybe</option>
           </select>
-<!--Submit Button-->
+  <!--Submit Button-->
           <button type="submit" class="btn">Submit!</button>
         </div>
       </form>
 <!--Answers-->
-<!--Answer 4: 10 is the most you could get if you asnwer no to everything so you will see the Class .you-need-to-travel displayed.-->
+      <!--Answer 4: 10 is the most you could get if you asnwer no to everything so you will see the Class .you-need-to-travel displayed.-->
       <div id="a_Four">
-        <h2>You should visit...</h2>
-        <h3>You need to expand your horizons, seriously just pick one of theses get a ticket and go.</h3>\
+        <h2><span class="nameInput"></span>, you need to expand your horizons, seriously just pick one of theses get a ticket and go.</h2>
       </div>
       <!-- Answer 1: If you get a total of 5 you will see Japan. -->
       <div class="container">
         <div id="a_One">
           <h3>Japan</h3>
-          <h2>You should visit...</h2>
+          <h2><span class="nameInput"></span>, you should visit...</h2>
           <img class="img-size" src="img/japan.jpg" ></img>
         </div>
 <!-- Answer 2: If you get an Asnwer equal to or less than 8 (=> 8), you will see Morocco -->
         <div id="a_Two">
           <h3>Morocco</h3>
-          <h2>You should visit...</h2>
+          <h2><span class="nameInput"></span>, you should visit...</h2>
           <img class="img-size" src="img/morocco.jpg"></img>
         </div>
 <!--Answer 3: If your asnwer is less than (>8) you will get Denmark-->
         <div id="a_Three">
           <h3>Denmark</h3>
-          <h2>You should visit...</h2>
+          <h2><span class="nameInput"></span>, you should visit...</h2>
           <img class="img-size" src="img/denmark.jpg"></img>
         </div>
 

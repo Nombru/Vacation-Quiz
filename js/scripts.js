@@ -1,13 +1,10 @@
 $(document).ready(function() {
-
-  $("#name").submit(function(event){
-    var nameInput = $("#fullName").val());
-    $("#questions").show();
-  });
-
-
   $("#questions").submit(function(event){
-  //  console.log("Hi");
+// trying to get the Name Input to work here
+  var nameInput = $("input#fullName").val();
+  $(".nameInput").append(nameInput);
+
+// Capturing the values of each elecg
     var q_OneInput = parseInt($("#q_One").val());
     var q_TwoInput = parseInt($("#q_Two").val());
     var q_ThreeInput = parseInt($("#q_Three").val());
@@ -22,18 +19,22 @@ $(document).ready(function() {
 
     if(total === 5){
       $("#a_One").show();
+      $("#questions").fadeOut("slow");
     } else if (total <=8) {
       $("#a_Two").show();
+      $("#questions").fadeOut();
     } else if (total === 10) {
       $("#a_Four").show();
       $("#a_One").show();
       $("#a_Two").show();
       $("#a_Three").show();
+      $("#questions").fadeOut();
     } else {
       $("#a_Three").show();
+      $("#questions").fadeOut();
     }
-
     event.preventDefault();
   });
-
 });
+
+  //  console.log("Hi");
