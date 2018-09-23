@@ -22,16 +22,16 @@ $(document).ready(function() {
       $("#questions").fadeOut("slow");
     } else if (total <=8) {
       $("#a_Two").show();
-      $("#questions").fadeOut();
+      $("#questions").fadeOut("slow");
     } else if (total === 10) {
       $("#a_Four").show();
       $("#a_One").show();
       $("#a_Two").show();
       $("#a_Three").show();
-      $("#questions").fadeOut();
+      $("#questions").fadeOut("slow");
     } else {
       $("#a_Three").show();
-      $("#questions").fadeOut();
+      $("#questions").fadeOut("slow");
     }
     event.preventDefault();
   });
